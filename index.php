@@ -51,11 +51,11 @@ if ( isset($_POST["form"]) ) {
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a data-scroll="home" class="active" href="#home">Home</a></li>
+                        <li><a data-scroll="about" href="#about">About</a></li>
+                        <li><a data-scroll="products" href="#products">Products</a></li>
+                        <li><a data-scroll="services" href="#services">Services</a></li>
+                        <li><a data-scroll="contact" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -78,7 +78,7 @@ if ( isset($_POST["form"]) ) {
 
         <!-- BEGIN -->
         <!-- HOME -->
-        <div class="container_cover div_offset" id="Inicio">
+        <div class="container_cover div_offset" id="home">
             <div class="cover">
                 <section class="text_cover">
                     <h1>The best tatoo shop in the world!</h1>
@@ -92,7 +92,7 @@ if ( isset($_POST["form"]) ) {
         </div>
 
         <!-- ABOUT -->
-        <div class="container_about container_card-primary">
+        <div class="container_about container_card-primary" id="about">
             <div class="about card_primary">
                 <div class="text_about text_card-primary">
                     <p>ABOUT US</p>
@@ -118,7 +118,7 @@ if ( isset($_POST["form"]) ) {
             </div>
         </div>
 
-        <div class="container_about2 div_offset">
+        <div class="container_about2 div_offset" id="products">
             <div class="about2">
                 <div class="text_about">
                     <h1>The most innovator team</h1>
@@ -147,44 +147,47 @@ if ( isset($_POST["form"]) ) {
 
 
         <!-- CONTACT US -->
-        <form action="./" method="post">
-            <h1>Contact Us!</h1>
-            <div class="input-group">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-            </div>
-            <div class="input-group">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="input-group">
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject">
-            </div>
-            <div class="input-group">
-                <label for="message">Message:</label>
-                <textarea name="message" id="message"></textarea>
-            </div>
-
-            <div class="button-container">
-                <button name="form" type="submit">Send</button>
-            </div>
-
-            <div class="contact-info">
-                <div class="info">
-                    <span><i class="fas fa-map-marker-alt"></i>Jr. The crazy moment.</span>
+        <section id="contact">
+            <form action="./" method="post">
+                <h1>Contact Us!</h1>
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
                 </div>
-                <div class="info">
-                    <span><i class="fas fa-phone"></i>+51 999 888 777</span>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
                 </div>
-            </div>
+                <div class="input-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject">
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
 
-        </form>
+                <div class="button-container">
+                    <button name="form" type="submit">Send</button>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info">
+                        <span><i class="fas fa-map-marker-alt"></i>Jr. The crazy moment.</span>
+                    </div>
+                    <div class="info">
+                        <span><i class="fas fa-phone"></i>+51 999 888 777</span>
+                    </div>
+                </div>
+
+            </form>
+        </section>
 
     </main>
 
     <footer></footer>
 
     <script src="https://kit.fontawesome.com/7c9c24e192.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
